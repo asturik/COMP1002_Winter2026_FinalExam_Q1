@@ -1,0 +1,115 @@
+<!--Use semantic elements:
+    <header>, <nav>, <main>, <section>, <footer>-->
+<!--Include:
+    Restaurant name in header
+    Navigation menu with 3 links
+    A section with:
+        Heading (can you lore ipsum filler text) 
+        Description
+        Image with meaningful alt text (use unsplash or pexels for images) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header + Navigation -->
+  <header class="site-header">
+    <h1>Delicious Bites</h1>
+
+    <!-- Profile picture -->
+    <img src="CzechResturaunt.jpg" alt="Profile Image" class="profile-img header-pic">
+    
+    <!-- Navigation links scroll to sections - just links the nav to the below sections. -->
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#foods">Foods</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    
+  </header>
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="card">
+      <h2>About Us</h2>
+      <p>
+        Hello! Welcome to Delicious Bites, where we share our love for food and culinary adventures. 
+        We are passionate about exploring different cuisines and flavors from around the world. 
+        Our mission is to inspire others to try new dishes and discover the joy of cooking. 
+        Whether you're a seasoned chef or just starting out in the kitchen, we hope to provide you 
+        with delicious recipes, cooking tips, and food-related content that will ignite your culinary creativity. 
+        Join us on this flavorful journey as we explore the wonderful world of food together!
+      </p>
+    </section>
+
+    <!-- MENU + FOODS SIDE BY SIDE -->
+    <div class="two-columns">
+      <!-- MENU SECTION -->
+      <section id="menu" class="card">
+        <h2>Menu</h2>
+        <ul class="center-list">
+          <li>Svíčková</li>
+          <li>Vepřo Knedlo Zelo</li>
+          <li>Guláš</li>
+          <li>Řízek</li>
+          <li>Smažený Sýr</li>
+        </ul>
+      </section>
+
+      <!-- FOODS SECTION -->
+      <section id="foods" class="card">
+        <h2>Foods</h2>
+        <p>
+          Our Favorite Foods:
+        </p>
+        <article class="favoriteFood project">
+          <h3>Guláš</h3>
+          <p>You must try our Guláš! It is a traditional Czech dish with tender beef, herbs & spices, gravy, and tasty greens. Served with freshly made dumplings.</p>
+        </article>
+
+        <article class="favoriteFood project">
+          <h3>Řízek</h3>
+          <p>You must try our Řízek! We offer the best pork Schnitzel in town. Crispy on the outside with a tender inside that'll leave your mouth watering.</p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Solid Line  -->
+    <hr class="section-divider">
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="card">
+
+      <h2>Contact Us</h2>
+      <form id = "contactForm">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required minlength="2">
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required minlength="10"></textarea>
+        <button type="submit">Send Message</button>
+
+        <p id = "formMessage"></p> <!-- Message container for form submission feedback -->
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>2026 DeliciousBites Co</p>
+  </footer>
+
+</body>
+</html>
